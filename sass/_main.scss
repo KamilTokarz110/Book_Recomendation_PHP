@@ -1,0 +1,21 @@
+html {
+    font-size: 10px;
+    background-color: $main-color;
+    font-family: $special-font;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1600px;
+    color: $font-color;
+    font-size: 2rem;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1600px;
+}
