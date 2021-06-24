@@ -19,7 +19,7 @@
                 <li class="menu__item"><a class="menu__link" href="#">link_2</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">link_3</a></li>
                 <li class="menu__item"><a class="menu__link" href="signup.php">Zarejestruj</a></li>
-                <li class="menu__item"><a class="menu__link menu__link--active" href="">Zaloguj</a></li>
+                <li class="menu__item"><a class="menu__link menu__link--active" href="login.php">Zaloguj</a></li>
             </ul>
             </div>
         </nav>
