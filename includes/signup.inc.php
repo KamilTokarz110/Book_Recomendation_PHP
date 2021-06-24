@@ -10,7 +10,7 @@ $pwd = $_POST["pwd"];
 $pwdRepeat = $_POST["pwdrepeat"];
 
 require_once 'dbh.inc.php';
-require_once 'fucntions.inc.php';
+require_once 'functions.inc.php';
 
 if(emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat) !== false){
     header("location: ../signup.php?error=emptyinput");
@@ -27,12 +27,12 @@ if(invalidEmail($email) !== false){
     exit();
 }
 
-if(pwdMatch($pwd,$pwdRepeat ) !== false){
+if(pwdMatch($pwd,$pwdRepeat) !== false){
     header("location: ../signup.php?error=passworddontmatch");
     exit();
 }
 
-if(uidExists($conn, $username ) !== false){
+if(uidExists($conn, $username, $email) !== false){
     header("location: ../signup.php?error=usernametaken");
     exit();
 }
