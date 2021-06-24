@@ -1,0 +1,55 @@
+.signup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+    background-color: $font-color;
+    height: 81vh;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 100%;
+        color: black;
+
+
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+
+        &-input {
+            flex-basis: 25px;
+            width: 250px;
+            padding: 5px 10px 5px 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: black 10px;
+            font-family: $special-font;
+
+        }
+
+        &-btn {
+            display: block;
+            flex-basis: 25px;
+            width: 250px;
+            padding: 5px 10px 5px 10px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: black 10px;
+            font-family: $special-font;
+            font-size: 2rem;
+
+            &:hover {
+                background-color: $font-color-active;
+                color: $font-color;
+            }
+        }
+    }
+
+}

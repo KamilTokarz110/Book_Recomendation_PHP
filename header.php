@@ -18,7 +18,7 @@
                 <li class="menu__item"><a class="menu__link" href="#">link_1</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">link_2</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">link_3</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Zarejestruj</a></li>
+                <li class="menu__item"><a class="menu__link" href="signup.php">Zarejestruj</a></li>
                 <li class="menu__item"><a class="menu__link menu__link--active" href="">Zaloguj</a></li>
             </ul>
             </div>
