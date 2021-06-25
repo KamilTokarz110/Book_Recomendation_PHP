@@ -27,7 +27,7 @@ session_start();
                 <?php
                 if(isset($_SESSION["useruid"])){
                     echo "<li class='menu__item'><a class='menu__link' href='signup.php'>Profile page</a></li>";
-                    echo "<li class='menu__item'><a class='menu__link menu__link--active' href='login.php'>Logout</a></li>";
+                    echo "<li class='menu__item'><a class='menu__link menu__link--active' href='includes/logout.inc.php'>Logout</a></li>";
                 }else{
                     echo "<li class='menu__item'><a class='menu__link' href='signup.php'>Sign up</a></li>";
                     echo "<li class='menu__item'><a class='menu__link menu__link--active' href='login.php'>Login</a></li>";
