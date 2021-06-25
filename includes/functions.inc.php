@@ -106,7 +106,7 @@ function emptyInputLogin($username,$pwd){
 }
 
 function loginUser($conn,$username,$pwd){
-    $uidExists = $uidExists($conn,$username,$username);
+    $uidExists = uidExists($conn,$username,$username);
 
     if($uidExists === false){
         header("location: ../login.php?error=wronglogin");
@@ -123,6 +123,6 @@ function loginUser($conn,$username,$pwd){
         session_start();
         $_SESSION["userid"] = $uidExists["usersId"];
         $_SESSION["useruid"] = $uidExists["usersUid"];
-        header("location: ../login.php");
+        header("location: ../index.php");
     };
 };

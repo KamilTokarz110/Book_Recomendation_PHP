@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -18,8 +23,18 @@
                 <li class="menu__item"><a class="menu__link" href="#">link_1</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">link_2</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">link_3</a></li>
-                <li class="menu__item"><a class="menu__link" href="signup.php">Zarejestruj</a></li>
-                <li class="menu__item"><a class="menu__link menu__link--active" href="login.php">Zaloguj</a></li>
+           
+                <?php
+                if(isset($_SESSION["useruid"])){
+                    echo "<li class='menu__item'><a class='menu__link' href='signup.php'>Profile page</a></li>";
+                    echo "<li class='menu__item'><a class='menu__link menu__link--active' href='login.php'>Logout</a></li>";
+                }else{
+                    echo "<li class='menu__item'><a class='menu__link' href='signup.php'>Sign up</a></li>";
+                    echo "<li class='menu__item'><a class='menu__link menu__link--active' href='login.php'>Login</a></li>";
+                }
+
+
+                ?>
             </ul>
             </div>
         </nav>
